@@ -1,0 +1,22 @@
+.wrapper {
+	width: 90%;
+	height: 90%;
+	text-align: center;
+}
+
+.color_block {
+display: inline-block;
+margin: 1px;
+padding: 0;
+background-color: #E6E6E6;
+width: 25px;
+height: 25px;
+border: 1px solid white;
+border-radius: 12.5px;
+transition: background 0.25s linear;
+
+}
+
+.color_block:hover {
+border-color: #CCCCCC;
+}
