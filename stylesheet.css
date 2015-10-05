@@ -1,15 +1,35 @@
-h1 {
-	font-family: Arial, Helvetica, sans-serif;
+html {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	pointer-events: auto;
+	text-decoration: none;
+}
+
+a:visited {
 	color: white;
-	font-weight: bold;
-	font-size: 4em;
+}
+
+a:hover {
+	color: #999999;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .bubble_wrapper {
 	position: fixed;
-	width: 110%;
+	width: 102%;
+	height: 102%;
 	text-align: center;
-	left: -5%;
+	top: -1%;
+	left: -1%;
 }
 
 .color_block {
@@ -18,12 +38,19 @@ transition: background 0.25s linear;
 }
 
 .name_wrapper {
-	position: fixed;
-	margin: auto;
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	margin: 0.5em;
 	padding: 1em;
-	background-color: rgba(0, 0, 0, .85);
-	text-align: center;
+	background-color: rgba(0, 0, 0, .90);
 	z-index: 1;
 	pointer-events: none;
-	vertical-align: middle;
+	box-shadow: 0px 0px 2px gray;
+	text-align: center;
+	border-radius: 6px;
+}
+
+input {
+	pointer-events: auto;
 }
