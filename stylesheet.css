@@ -1,22 +1,29 @@
-.wrapper {
-	width: 90%;
-	height: 90%;
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-weight: bold;
+	font-size: 4em;
+}
+
+.bubble_wrapper {
+	position: fixed;
+	width: 110%;
 	text-align: center;
+	left: -5%;
 }
 
 .color_block {
 display: inline-block;
-margin: 1px;
-padding: 0;
-background-color: #E6E6E6;
-width: 25px;
-height: 25px;
-border: 1px solid white;
-border-radius: 12.5px;
 transition: background 0.25s linear;
-
 }
 
-.color_block:hover {
-border-color: #CCCCCC;
+.name_wrapper {
+	position: fixed;
+	margin: auto;
+	padding: 1em;
+	background-color: rgba(0, 0, 0, .85);
+	text-align: center;
+	z-index: 1;
+	pointer-events: none;
+	vertical-align: middle;
 }
